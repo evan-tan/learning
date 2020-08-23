@@ -16,3 +16,7 @@ def common_letters(str1, str2):
 
 """Easy way to cast every element in stdin to a specific data type, e.g. int"""
 input_items = list(map(int, input().rstrip().split()))
+
+# f strings
+first_name = "Evan"
+print(f"My name is {first_name}")
