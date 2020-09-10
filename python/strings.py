@@ -20,3 +20,8 @@ input_items = list(map(int, input().rstrip().split()))
 # f strings
 first_name = "Evan"
 print(f"My name is {first_name}")
+
+# Create a single object from a list of objects
+reapers_line_one_words = ["Black", "reapers", "with", "the", "sound", "of", "steel", "on", "stones"]
+
+reapers_line_one = ' '.join(reapers_line_one_words)

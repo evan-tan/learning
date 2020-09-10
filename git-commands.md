@@ -77,17 +77,29 @@ nbdime config-git --enable --global
 
 # Update your forked repo with commits from the original repo
 ```bash
+# Check that repo has an upstream remote
+git remote -v
+# If no upstream remote, configure your repo
 git remote add upstream repo_name.git
+# Verify that upstream remote added
+git remote -v
+
 git pull upstream branch_name
 git push origin branch_name
 ```
 
 
 
-# To revert to a certain commit
+# Reverting changes...
+## To a certain commit
 ```bash
 git revert commit_id
 git push
+```
+
+## For a certain file
+```bash
+git checkout -- file_name
 ```
 
 
@@ -109,6 +121,13 @@ git log --pretty="-- %s"
 ## Changelogs
 ```bash
 
+```
+
+
+
+# Writing detailed commit messages
+```bash
+git commit -m "title" -m "description"
 ```
 
 
