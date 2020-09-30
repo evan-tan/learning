@@ -1,4 +1,5 @@
 *.pyo
 *.pyc
 .ipynb_checkpoints/
-
+.clang-format
+.clang-tidy
